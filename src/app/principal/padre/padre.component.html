@@ -1,0 +1,13 @@
+<h1 class="text-center text-primary m-3">Reto padre-hijo</h1>
+
+<section class="container py-5 w-50">
+    <section class="card border-primary shadow-3-strong" style="border-radius: 1rem">
+        <form class="card-body p-5">
+            <section class="form-group my-4">
+                <h4>Componente Padre</h4>
+                <input class="form-control border-primary" type="text" name="datos" [(ngModel)]="datos_padre">
+            </section>
+            <app-hijo1 [mensaje_padre]="datos_padre"></app-hijo1>
+        </form>
+    </section>
+</section>
